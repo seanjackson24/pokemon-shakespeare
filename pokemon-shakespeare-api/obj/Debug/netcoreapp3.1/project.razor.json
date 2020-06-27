@@ -20521,38 +20521,38 @@
   "RootNamespace": "pokemon_shakespeare_api",
   "Documents": [
     {
-      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
+      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
+      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
+      "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     }
   ],
