@@ -20518,7 +20518,7 @@
     ],
     "CSharpLanguageVersion": 800
   },
-  "RootNamespace": "pokemon_shakespeare_api",
+  "RootNamespace": "PokemonShakespeare.Api",
   "Documents": [
     {
       "FilePath": "c:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\Views\\_ViewImports.cshtml",

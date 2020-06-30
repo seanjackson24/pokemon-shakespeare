@@ -1,11 +1,9 @@
-using System;
-
-namespace pokemon_shakespeare_api.Models
+namespace PokemonShakespeare.Api.Models
 {
-    public class ErrorViewModel
-    {
-        public string RequestId { get; set; }
+	public class ErrorViewModel
+	{
+		public string RequestId { get; set; }
 
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
-    }
+		public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+	}
 }
