@@ -30,7 +30,7 @@ public class PokemonFetchService : IPokemonFetchService
 		var localFlavorText = await _apiClient.GetPokemonDescription(name, cancellationToken);
 
 		string translated = await _shakespeare.TranslateToShakespearean(localFlavorText, cancellationToken);
-		pokemon = new Pokemon(name, localFlavorText, translated);
+		pokemon = new Pokemon() { Name = name, Description = translated };
 		_cache.Set(name, pokemon);
 		return pokemon;
 	}

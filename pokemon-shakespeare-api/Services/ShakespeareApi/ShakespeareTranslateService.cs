@@ -18,9 +18,15 @@ public class ShakespeareApiClient
 	public async Task<ShakespeareApiResponse> TranslateToShakespearean(string text, CancellationToken cancellationToken)
 	{
 		var requestUrl = api + text;
+		// try
+		// {
 		var response = await _httpClient.GetStreamAsync(requestUrl);
 		return await JsonSerializer.DeserializeAsync<ShakespeareApiResponse>(response, new JsonSerializerOptions(), cancellationToken);
-
+		// }
+		// catch (Exception ex)
+		// {
+		// 	return Task.FromResult(null);
+		// }
 		// todo: using??
 	}
 }

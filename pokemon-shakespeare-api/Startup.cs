@@ -15,10 +15,19 @@ namespace PokemonShakespeare.Api
 
 		public IConfiguration Configuration { get; }
 
+		private const string CorsPolicy = "CorsPolicy";
+
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddCors(c => c.AddPolicy(CorsPolicy, builder =>
+			{
+				builder.WithOrigins("http://localhost:8080").AllowAnyHeader().AllowAnyMethod();
+
+			}));
+
 			services.AddControllersWithViews();
+
 			services.AddHttpClient<PokemonApiClient>();
 			services.AddHttpClient<ShakespeareApiClient>();
 			services.AddSingleton(typeof(IPokemonFetchService), typeof(PokemonFetchService));
@@ -43,6 +52,8 @@ namespace PokemonShakespeare.Api
 			app.UseStaticFiles();
 
 			app.UseRouting();
+
+			app.UseCors(CorsPolicy);
 
 			app.UseAuthorization();
 

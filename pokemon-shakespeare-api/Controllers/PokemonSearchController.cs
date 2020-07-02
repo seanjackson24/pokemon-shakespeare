@@ -19,9 +19,9 @@ namespace PokemonShakespeare.Api.Controllers
 			_fetchService = fetchService;
 		}
 
-		public async Task<ActionResult<Pokemon>> Index(CancellationToken cancellationToken)
+		public async Task<ActionResult<Pokemon>> Index(string name, CancellationToken cancellationToken)
 		{
-			var pokemon = await _fetchService.GetPokemon("bulbasaur", cancellationToken);
+			var pokemon = await _fetchService.GetPokemon(name, cancellationToken);
 			return pokemon;
 		}
 	}

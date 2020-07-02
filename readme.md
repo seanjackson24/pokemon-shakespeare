@@ -18,7 +18,7 @@ build script?
 -   in cache
 -   not in cache
 
--   shakespeare: empty FTE
+-   shakespeare: empty Flavor Text Entry input
 -   shakespeare returns results
 -   API down
 -   rate limited?
@@ -30,10 +30,3 @@ build script?
 // TODO:
 config - urls, language code
 configure await
-
-// FRONTEND:
-
--   subset fonts
--   serviceworker?
--   preload JS
--

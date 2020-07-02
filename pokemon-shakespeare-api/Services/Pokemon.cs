@@ -1,13 +1,7 @@
 public class Pokemon
 {
-	private string name;
-	private string localFlavorText;
-	private string translated;
+	public string Name { get; set; }
 
-	public Pokemon(string name, string localFlavorText, string translated)
-	{
-		this.name = name;
-		this.localFlavorText = localFlavorText;
-		this.translated = translated;
-	}
+	public string Description { get; set; }
+
 }
