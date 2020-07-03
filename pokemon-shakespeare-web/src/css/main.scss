@@ -1,0 +1,75 @@
+* {
+    font-family: sans-serif;
+}
+
+.app-root {
+    padding: 20px;
+}
+
+.pokemon-search {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.search-header {
+    font-size: 26px;
+}
+.search-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    .search-field {
+        width: 100%;
+        height: 40px;
+        font-size: 30px;
+    }
+}
+
+.search-result {
+    display: flex;
+    flex-direction: row;
+}
+
+.favstar {
+    width: 30px;
+    height: 30px;
+    &.selected {
+        fill: #ffd700;
+    }
+}
+
+.pokemon {
+    margin-left: 15px;
+}
+
+.search-failure {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.failure-image {
+    width: 100%;
+    height: auto;
+}
+.favourites {
+    margin-top: 30px;
+}
+.favourites-title {
+    font-size: 18px;
+}
+.favourites-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favourite-item {
+    display: flex;
+    flex-direction: row;
+}
+.pokemon-name {
+    font-size: 22px;
+    text-transform: capitalize;
+}
