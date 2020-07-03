@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PokemonShakespeare.Api.Models;
+using PokemonShakespeare.Api.Models.ShakespeareApi;
 using PokemonShakespeare.Api.Services;
 
 namespace PokemonShakespeare.Api.Controllers
@@ -29,7 +30,7 @@ namespace PokemonShakespeare.Api.Controllers
 			{
 				var pokemon = await _fetchService.GetPokemon(name, cancellationToken);
 				return pokemon;
-			} catch (HttpRequestException ex)
+			} catch (TooManyRequestsException ex)
             {
 				_logger.LogError("Too many requests recorded from API", ex.Message);
 				return StatusCode(StatusCodes.Status429TooManyRequests);

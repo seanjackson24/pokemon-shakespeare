@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using Xunit;
 using PokemonShakespeare.Api.Services.ShakespeareApi;
+using PokemonShakespeare.Api.Models.ShakespeareApi;
 
 namespace PokemonShakespeare.Api.Tests.UnitTests
 {
@@ -47,7 +48,7 @@ namespace PokemonShakespeare.Api.Tests.UnitTests
         public async Task TooManyApiCalls_ReturnsNull()
         {
             var service = new ShakespeareApiClient(new HttpClient());
-            await Assert.ThrowsAsync<HttpRequestException>(async () =>
+            await Assert.ThrowsAsync<TooManyRequestsException>(async () =>
             {
 
                 for (int i = 0; i < 60; i++)

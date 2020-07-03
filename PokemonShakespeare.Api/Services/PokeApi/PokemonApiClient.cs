@@ -25,6 +25,7 @@ namespace PokemonShakespeare.Api.Services.PokeApi
             var requestUrl = new Uri(url + pokemonName.ToLowerInvariant());
             var request = new HttpRequestMessage(HttpMethod.Get, requestUrl);
             var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+         
             using (var contentStream = await response.Content.ReadAsStreamAsync())
             {
                 try

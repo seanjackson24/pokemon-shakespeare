@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PokemonShakespeare.Api.Models.ShakespeareApi;
+using System;
+using System.Net;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading;
@@ -24,8 +26,17 @@ namespace PokemonShakespeare.Api.Services.ShakespeareApi
             }
             string urlSafeText = Uri.EscapeDataString(text.Replace("\n", ""));
             var requestUrl = new Uri(api + urlSafeText);
-            var response = await _httpClient.GetStreamAsync(requestUrl);
-            return await JsonSerializer.DeserializeAsync<ShakespeareApiResponse>(response, new JsonSerializerOptions(), cancellationToken);
+            var request = new HttpRequestMessage(HttpMethod.Get, requestUrl);
+            var response = await _httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, cancellationToken);
+            
+            if (response.StatusCode == HttpStatusCode.TooManyRequests)
+            {
+                throw new TooManyRequestsException();
+            }
+            using (var contentStream = await response.Content.ReadAsStreamAsync())
+            {
+                return await JsonSerializer.DeserializeAsync<ShakespeareApiResponse>(contentStream, new JsonSerializerOptions(), cancellationToken);
+            }
         }
     }
 }
