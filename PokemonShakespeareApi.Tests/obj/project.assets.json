@@ -3510,8 +3510,8 @@
     },
     "PokemonShakespeare.Api/1.0.0": {
       "type": "project",
-      "path": "../pokemon-shakespeare-api/PokemonShakespeare.Api.csproj",
-      "msbuildProject": "../pokemon-shakespeare-api/PokemonShakespeare.Api.csproj"
+      "path": "../PokemonShakespeare.Api/PokemonShakespeare.Api.csproj",
+      "msbuildProject": "../PokemonShakespeare.Api/PokemonShakespeare.Api.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3529,11 +3529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api.Tests\\PokemonShakespeare.Api.Tests.csproj",
+      "projectUniqueName": "C:\\git\\pokemon-shakespeare\\PokemonShakespeareApi.Tests\\PokemonShakespeare.Api.Tests.csproj",
       "projectName": "PokemonShakespeare.Api.Tests",
-      "projectPath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api.Tests\\PokemonShakespeare.Api.Tests.csproj",
+      "projectPath": "C:\\git\\pokemon-shakespeare\\PokemonShakespeareApi.Tests\\PokemonShakespeare.Api.Tests.csproj",
       "packagesPath": "C:\\Users\\seanj\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api.Tests\\obj\\",
+      "outputPath": "C:\\git\\pokemon-shakespeare\\PokemonShakespeareApi.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\seanj\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3549,8 +3549,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\PokemonShakespeare.Api.csproj": {
-              "projectPath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\PokemonShakespeare.Api.csproj"
+            "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj": {
+              "projectPath": "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj"
             }
           }
         }

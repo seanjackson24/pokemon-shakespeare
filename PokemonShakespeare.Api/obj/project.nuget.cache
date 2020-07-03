@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2FronRFSHbTeWj2C//Px2w89BVWIy4X5mMvLQEuQtXUiTDg4UC42A78RNgvX8nw9bE7Ubj6DnJbshCzyaJ6kJw==",
+  "dgSpecHash": "gKQngp97C+eXP250k+lnlqDZlPodvhw9X1MXw93k3vQEt4Qf2JhGhxgwx7lrcTebmNtEAMRPqzGJ20kmtpgI0Q==",
   "success": true,
-  "projectFilePath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\PokemonShakespeare.Api.csproj",
+  "projectFilePath": "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

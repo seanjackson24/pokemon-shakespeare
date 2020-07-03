@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\PokemonShakespeare.Api.csproj",
+      "projectUniqueName": "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj",
       "projectName": "PokemonShakespeare.Api",
-      "projectPath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\PokemonShakespeare.Api.csproj",
+      "projectPath": "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj",
       "packagesPath": "C:\\Users\\seanj\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\obj\\",
+      "outputPath": "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\seanj\\AppData\\Roaming\\NuGet\\NuGet.Config",

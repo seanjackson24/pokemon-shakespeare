@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\pokemon-shakespeare-api\PokemonShakespeare.Api.csproj" />
+    <ProjectReference Include="..\PokemonShakespeare.Api\PokemonShakespeare.Api.csproj" />
   </ItemGroup>
 
 </Project>
