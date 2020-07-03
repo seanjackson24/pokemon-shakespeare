@@ -1,11 +1,15 @@
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PokemonShakespeare.Api.Models;
+using PokemonShakespeare.Api.Services;
 
 namespace PokemonShakespeare.Api.Controllers
 {
-	[ApiController]
+    [ApiController]
 	[Route("/search-pokemon")]
 	public class PokemonSearchController : Controller
 	{
@@ -21,8 +25,15 @@ namespace PokemonShakespeare.Api.Controllers
 
 		public async Task<ActionResult<Pokemon>> Index(string name, CancellationToken cancellationToken)
 		{
-			var pokemon = await _fetchService.GetPokemon(name, cancellationToken);
-			return pokemon;
+			try
+			{
+				var pokemon = await _fetchService.GetPokemon(name, cancellationToken);
+				return pokemon;
+			} catch (HttpRequestException ex)
+            {
+				_logger.LogError("Too many requests recorded from API", ex.Message);
+				return StatusCode(StatusCodes.Status429TooManyRequests);
+            }
 		}
 	}
 }
