@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\pokemon-shakespeare-api.csproj": {}
+    "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj": {}
   },
   "projects": {
-    "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\pokemon-shakespeare-api.csproj": {
+    "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\pokemon-shakespeare-api.csproj",
+        "projectUniqueName": "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj",
         "projectName": "pokemon-shakespeare-api",
-        "projectPath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\pokemon-shakespeare-api.csproj",
+        "projectPath": "C:\\git\\pokemon-shakespeare\\PokemonShakespeare.Api\\PokemonShakespeare.Api.csproj",
         "packagesPath": "C:\\Users\\seanj\\.nuget\\packages\\",
         "outputPath": "C:\\git\\pokemon-shakespeare\\pokemon-shakespeare-api\\obj\\",
         "projectStyle": "PackageReference",

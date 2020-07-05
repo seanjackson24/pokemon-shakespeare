@@ -41,6 +41,14 @@ namespace PokemonShakespeare.Api.Tests.UnitTests
             Assert.NotNull(result);
         }
 
+        [Fact]
+        public async Task NewLineInString_IsReplacedWithSpace()
+        {
+            var service = new ShakespeareApiClient(new HttpClient());
+            var result = await service.TranslateToShakespearean("s\ns", CancellationToken.None);
+            Assert.NotNull(result);
+            Assert.Equal("S s", result.Contents.Translated);
+        }
 
         //  For public API calls this is 60 API calls a day with distribution of 5 calls an hour.
         // this tests that the API 429 exceptions (too many requests) are bubbled up. Uncomment out the [Fact] attribute to run it, but be aware this will break the other integration tests.
