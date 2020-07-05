@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "start": "snowpack dev",
-        "build": "snowpack build",
+        "start": "npm run run:sass && snowpack dev",
+        "build": "npm run run:sass && snowpack build",
         "test": "jest",
         "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
         "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
